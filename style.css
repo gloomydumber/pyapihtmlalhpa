@@ -1,0 +1,42 @@
+h1{
+  font-size:45px;
+  text-align:center;
+  border-bottom:5px solid yellow;
+  margin:0;
+  padding:20px;
+  background-color:black;
+}
+a{
+  color:lime;
+  text-decoration:none;
+}
+ul{
+  border-right: solid 5px yellow;
+  width:100px;
+  margin:0px;
+  padding:20px;
+  background-color:black;
+  text-align:center;
+  color:yellow;
+}
+body{
+  color:yellow;
+  background-color:black;
+  margin-bottom:0;
+}
+h2{
+  color:yellow;
+}
+#grid ul{
+  padding-left:33px;
+}
+#grid{
+  display:grid;
+  grid-template-columns:150px 1fr;
+}
+#grid #article{
+  padding-left:25px;
+}
+p{
+  margin-bottom:0;
+}
