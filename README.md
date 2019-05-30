@@ -15,7 +15,7 @@
 [웹사이트](https://gloomydumber.github.io/pyapihtmlalhpa/result.html)
 
 ## 소스
-* [링크로 소스 내용 보기](https://github.com/cybermin/python2019/blob/master/tes.py) 
+* [링크로 소스 내용 보기](https://github.com/gloomydumber/pyapihtmlalhpa/blob/master/toiletest.py) 
 
 * 코드 삽입
 ~~~python
