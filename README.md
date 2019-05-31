@@ -29,7 +29,8 @@
     <a href="http://pusan.ac.kr/">부산대</a> # html파일에서 html 문법에 맞게 출력
 
 
-HTML과 같은 마크업언어를 파이썬의 file.write()로 한줄씩 입력해야함.
+즉, 쉽게 작성 할 수 있는 마크업언어인 html을 파이썬의 file.write()로 한줄씩 입력해야함.
+따라서 부분적으로 [htmltag](https://github.com/LiftoffSoftware/htmltag) 라는 모듈을 도입하여 비경제성을 미약하게나마 해결 시도함.
 
 
 
