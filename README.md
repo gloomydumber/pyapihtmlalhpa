@@ -34,6 +34,10 @@
 
 공중화장실 API에서 각 화장실의 위도와 경도 값을 제공하는 것을 발견하고, 구글 지도에서 위도, 경도로 검색하는 기능을 이용하여 화장실 위치를 나타내는 구글 지도 링크를 생성하도록 함. (네이버와 다음 지도 또한 각각의 API 이용하면 가능)
 
+Open API의 XML에서 받아온 정보를, HTML 작성과 동시에 PANDAS로 활용하여 유용한 정보를 정리하여 아래와 같이 IDE 상의 console에서 출력하도록 함
+![pandas](./readmeimg/pandas.gif)
+
+
 <strong>프로젝트 결과</strong>
 
 [GitHub Pages 활용 웹사이트](https://gloomydumber.github.io/pyapihtmlalhpa/result.html)
