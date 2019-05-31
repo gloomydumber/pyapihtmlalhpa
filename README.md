@@ -53,7 +53,7 @@ javascript를 통한 Open API 반응형 웹을 구축하면, API상의 정보가
 
 (각기 다른 화장실임에도, 같은 시설 내에 있으면 모두 같은 위도 경도 값을 가짐.)
 
-프로젝트의 의의를 <strong><em>python</em></strong>으로 OPEN API를 활용한 것에 두기로 한다.
+프로젝트의 의의를 <strong><em>python</em></strong>으로 OPEN API 및 pandas 모듈 활용한 것에 두기로 한다.
 
 ## 사용한 공공데이터 
 [데이터보기](http://data.ulsan.go.kr/rest/ulsantoilet/getUlsantoiletList?authApiKey=DEjz18TCYogpRgTo7XL5cAGOmLWhnd30DiWD%2BP2cqkUNMP%2F8%2FBNM4jxZ72gKpNNPG6XOAZzXcmg5kXATmq499g%3D%3D&numOfRows=9999)
