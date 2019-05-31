@@ -24,10 +24,13 @@
 따라서 부산광역시 공중화장실 정보와 오퍼레이션이 매우 유사한 울산광역시 공중화장실 정보를 이용함.
 
 파이썬으로 HTML을 출력하는 파일을 코딩할 시, 다음과 같은 비경제성 발생
+  
+    >>> f.write('<a href="http://pusan.ac.kr/">부산대</a>') # 라고 작성해야,
+    <a href="http://pusan.ac.kr/">부산대</a> # html파일에서 html 문법에 맞게 출력
 
-    >>> from htmltag import a
-    >>> print(a('awesome software', href='http://liftoffsoftware.com/'))
-    <a href="http://liftoffsoftware.com/">awesome software</a>
+
+HTML과 같은 마크업언어를 파이썬의 file.write()로 한줄씩 입력해야함.
+
 
 
 <strong>프로젝트 한계</strong>
