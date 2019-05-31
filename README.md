@@ -36,7 +36,7 @@
 
 <strong>프로젝트 결과</strong>
 
-[웹사이트](https://gloomydumber.github.io/pyapihtmlalhpa/result.html)
+[GitHub Pages 활용 웹사이트](https://gloomydumber.github.io/pyapihtmlalhpa/result.html)
 (새창으로 열기 : Ctrl + Click)
 
 <strong>프로젝트 한계</strong>
