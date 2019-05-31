@@ -34,7 +34,10 @@
 
 공중화장실 API에서 각 화장실의 위도와 경도 값을 제공하는 것을 발견하고, 구글 지도에서 위도, 경도로 검색하는 기능을 이용하여 화장실 위치를 나타내는 구글 지도 링크를 생성하도록 함. (네이버와 다음 지도 또한 각각의 API 이용하면 가능)
 
+<strong>프로젝트 결과</strong>
 
+[웹사이트](https://gloomydumber.github.io/pyapihtmlalhpa/result.html)
+(새창으로 열기 : Ctrl + Click)
 
 <strong>프로젝트 한계</strong>
 
@@ -47,9 +50,7 @@ javascript를 통한 Open API 반응형 웹을 구축하면, API상의 정보가
 ## 사용한 공공데이터 
 [데이터보기](http://data.ulsan.go.kr/rest/ulsantoilet/getUlsantoiletList?authApiKey=DEjz18TCYogpRgTo7XL5cAGOmLWhnd30DiWD%2BP2cqkUNMP%2F8%2FBNM4jxZ72gKpNNPG6XOAZzXcmg5kXATmq499g%3D%3D&numOfRows=9999)
 (새창으로 열기 : Ctrl + Click)
-## HTML 결과물
-[웹사이트](https://gloomydumber.github.io/pyapihtmlalhpa/result.html)
-(새창으로 열기 : Ctrl + Click)
+
 ## 소스
 * [링크로 소스 내용 보기](https://github.com/gloomydumber/pyapihtmlalhpa/blob/master/toiletest.py) 
 (새창으로 열기 : Ctrl + Click)
