@@ -23,6 +23,13 @@
 ![qna](./readmeimg/qna.PNG)
 따라서 부산광역시 공중화장실 정보와 오퍼레이션이 매우 유사한 울산광역시 공중화장실 정보를 이용함.
 
+파이썬으로 HTML을 출력하는 파일을 코딩할 시, 다음과 같은 비경제성 발생
+
+    >>> from htmltag import a
+    >>> print(a('awesome software', href='http://liftoffsoftware.com/'))
+    <a href="http://liftoffsoftware.com/">awesome software</a>
+
+
 <strong>프로젝트 한계</strong>
 
 javascript를 통한 Open API 반응형 웹을 구축하면, API상의 정보가 변할 때마다 python을 통한 HTML 출력 후, 서버에 업로드 해야하는 비경제적이고 불합리한 문제 해결 가능.
