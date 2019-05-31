@@ -50,6 +50,7 @@ cf)[What is Github pages](https://help.github.com/en/articles/what-is-github-pag
 javascript를 통한 Open API 반응형 웹을 구축하면, API상의 정보가 변할 때마다 python을 통한 HTML 출력 후, 서버에 업로드 해야하는 비경제적이고 불합리한 문제 해결 가능.
 
 울산광역시 공중화장실 정보 API에서 제공하는 정보의 양이나 질이 낮고, 업데이트 빈도가 낮음.
+
 (각기 다른 화장실임에도, 같은 시설 내에 있으면 모두 같은 위도 경도 값을 가짐.)
 
 프로젝트의 의의를 <strong><em>python</em></strong>으로 OPEN API를 활용한 것에 두기로 한다.
