@@ -23,12 +23,16 @@ def getvalueofnode(node):
 
 parsed_xml = et.parse("testoftoiletz.xml")
 root=parsed_xml.getroot()
-dfcols = ['화장실명', '화장실주소', '경도', '위도']
+dfcols = ['화장실명', '화장실주소', '경도', '위도'] #pandas 작성부분
 df_xml = pd.DataFrame(columns=dfcols)
 
 fh = open("result.html", "w") #html 작성부분
 
 def htmlwrite1():
+    fh.write("<html>")
+    #fh.write('<meta charset="utf-8">') # LOCAL과 SERVER에 올렸을때 글자 깨짐 차이
+    fh.write('<meta name="viewport" content="width=device-width">')
+    fh.write('<meta name="viewport" content="width=device-width, initial-scale=1">')
     tit = title("울산광역시 공중화장실 정보")
     fh.write(tit)
     fh.write(str('<link rel="stylesheet" href="styletoilet.css">'))  # css 도입
@@ -53,9 +57,11 @@ def htmlwrite1():
     fh.write('\n')
     fh.write(span(str('도로명주소'),id="ix"))
     fh.write('\n')
-    fh.write(span(str('구글지도'),id="ix"))
+    fh.write(span(str('개방시간'),id="ix"))
     fh.write('\n')
-    fh.write(span(str('업데이트 일자'),id="ix"))
+    fh.write(span(str(''), id="ix2")) # 해상도 반응형 그리드
+    fh.write(span(str(''), id="ix2"))
+    fh.write(span(str(''), id="ix2"))
 
 def htmlwrite2():
     fh.write(str('<div id="disqus_thread"></div>'))
@@ -82,10 +88,11 @@ def htmlwrite2():
     fh.write(str('s0.parentNode.insertBefore(s1,s0);'))
     fh.write(str('})();'))
     fh.write(str('</script>'))
+    fh.write("</html>")
 
 htmlwrite1()
 
-for node in root.iter(): #API에서 받은자료를 pands작성과 동시에 html에 작성
+for node in root.iter(): #API에서 받은자료를 pandas작성과 동시에 html에 작성
     toiletName = node.find('toiletName')
     if toiletName != None:
         n=(span(str(getvalueofnode(toiletName))))
@@ -93,9 +100,7 @@ for node in root.iter(): #API에서 받은자료를 pands작성과 동시에 htm
         fh.write("\n")
     toiletNewAddr = node.find('toiletNewAddr')
     if toiletNewAddr != None:
-        na=(span(str(getvalueofnode(toiletNewAddr))))
-        fh.write(na)
-        fh.write("\n")
+        na = (span(str(getvalueofnode(toiletNewAddr))))
     toiletXpos = node.find('toiletXpos')
     if toiletXpos != None:
         x = ((str(getvalueofnode(toiletXpos))))
@@ -103,20 +108,31 @@ for node in root.iter(): #API에서 받은자료를 pands작성과 동시에 htm
     if toiletYpos != None:
         y = ((str(getvalueofnode(toiletYpos))))
         lk = str("https://www.google.co.kr/maps/place/"+y+" "+x)
-        c = (span(a('구글지도', href=lk, target="_blank")))
+        c = (span(a(na, href=lk, target="_blank")))
         fh.write(c)
         fh.write("\n")
-    toiletBaseDt = node.find('toiletBaseDt')
-    if toiletBaseDt != None:
-        tbd = (span(str(getvalueofnode(toiletBaseDt))))
-        fh.write(tbd)
+    toiletUnisexCheck = node.find('toiletUnisexCheck')
+    ''' # 전부 남녀개별 화장실이므로 생략
+    if toiletUnisexCheck != None:
+        tus = (span(str(getvalueofnode(toiletUnisexCheck))))
+        if tus=="Y":
+            fh.write(span(str("남녀공용")))
+            fh.write("<br>")
+        else:
+                fh.write(span(str("남녀개별")))
+                fh.write("<br>")
+    '''
+    toiletOpenTime = node.find('toiletOpenTime')
+    if toiletOpenTime != None:
+        tot = (span(str(getvalueofnode(toiletOpenTime))))
+        fh.write(tot)
         fh.write("<br>")
     if toiletName != None :
         df_xml = df_xml.append(pd.Series([getvalueofnode(toiletName), getvalueofnode(toiletNewAddr), getvalueofnode(toiletXpos),getvalueofnode(toiletYpos)],index=dfcols),ignore_index=True)
 
 htmlwrite2()
 
-print(df_xml) # pandas ide python console에 출력
+print(df_xml) # pandas python ide console에 출력
 
 fh.close()
 
