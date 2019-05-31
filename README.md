@@ -7,6 +7,7 @@
 
 ## 프로젝트 개요
 공공데이터포털(data.go.kr)에서 OPEN API로 제공되고, 실생활에 활용가능성이 높은 화장실 정보를 다루어 본다.
+![qna](./qna.png)
 
 ## 사용한 공공데이터 
 [데이터보기](http://data.ulsan.go.kr/rest/ulsantoilet/getUlsantoiletList?authApiKey=DEjz18TCYogpRgTo7XL5cAGOmLWhnd30DiWD%2BP2cqkUNMP%2F8%2FBNM4jxZ72gKpNNPG6XOAZzXcmg5kXATmq499g%3D%3D&numOfRows=9999)
