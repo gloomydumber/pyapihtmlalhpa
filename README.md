@@ -6,7 +6,7 @@
 
 
 ## 프로젝트 개요
-<strong>공공데이터포털(<a>data.go.kr,"data.go.kr"</a>)</strong>에서 OPEN API로 제공되고, 실생활에 활용가능성이 높은 공중 화장실 정보를 다루어 본다.
+<strong>[공공데이터포털]<a>data.go.kr,"data.go.kr"</a></strong>에서 OPEN API로 제공되고, 실생활에 활용가능성이 높은 공중 화장실 정보를 다루어 본다.
 
 차후에 웹, ANDROID 및 iOS 어플리케이션, GUI 관련 툴 등을 학습하여 연계할 수 있을 것으로 생각하여 선택하였고,
 실제로 공부해둔 간단한 html 및 css와 연계함.
