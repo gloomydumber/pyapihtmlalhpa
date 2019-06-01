@@ -47,7 +47,7 @@ cf)[What is Github pages](https://help.github.com/en/articles/what-is-github-pag
 
 <strong>프로젝트 한계</strong>
 
-javascript를 통한 Open API 반응형 웹을 구축하면, API상의 정보가 변할 때마다 python을 통한 HTML 출력 후, 서버에 업로드 해야하는 비경제적이고 불합리한 문제 해결 가능.
+javascript를 통한 Open API 반응형 동적 웹을 구축하면, API상의 정보가 변할 때마다 python을 통한 HTML 출력 후, 서버에 업로드 해야하는 비경제적이고 불합리한 문제 해결 가능.
 
 울산광역시 공중화장실 정보 API에서 제공하는 정보의 양이나 질이 낮고, 업데이트 빈도가 낮음.
 
