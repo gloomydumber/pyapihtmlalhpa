@@ -41,7 +41,7 @@ Open API의 XML에서 받아온 정보를, HTML 작성과 동시에 PANDAS를 �
 <strong>프로젝트 결과</strong>
 
 [★★★ GitHub Pages 활용 웹사이트](https://gloomydumber.github.io/pyapihtmlalhpa/result.html)
-(새창으로 열기 : Ctrl + Click, Chrome 1920 * 1080 기준 )
+(새창으로 열기 : Ctrl + Click, desktop Chrome 1920 * 1080 기준 )
 
 cf)[What is Github pages](https://help.github.com/en/articles/what-is-github-pages)
 
